@@ -19,7 +19,7 @@ class Company:
         total_expenses = 0
         for employer in self.employer_list:
             total_expenses += employer.salary
-        return total_expenses - self.monthly_income
+        return -(total_expenses - self.monthly_income)
 
 
 def main():

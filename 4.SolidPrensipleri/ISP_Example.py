@@ -10,10 +10,14 @@ class Animal(ABC):
     def walk(self):
         pass
 
+
+class Swimmable(ABC):
     @abstractmethod
     def swim(self):
         pass
 
+
+class Fliable:
     @abstractmethod
     def fly(self):
         pass
@@ -26,14 +30,8 @@ class Cat(Animal):
     def walk(self):
         return True
 
-    def swim(self):
-        raise NotImplemented
 
-    def fly(self):
-        raise NotImplemented
-
-
-class Duck(Animal):
+class Duck(Animal, Swimmable):
     def eat(self):
         return True
 
@@ -43,19 +41,13 @@ class Duck(Animal):
     def swim(self):
         return True
 
-    def fly(self):
-        raise NotImplemented
 
-
-class Pigeon(Animal):
+class Pigeon(Animal, Fliable):
     def eat(self):
         return True
 
     def walk(self):
         return True
-
-    def swim(self):
-        raise NotImplemented
 
     def fly(self):
         return True

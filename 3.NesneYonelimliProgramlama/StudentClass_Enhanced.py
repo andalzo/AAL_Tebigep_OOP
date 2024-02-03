@@ -10,8 +10,8 @@ class Student:
     def set_name(self, name: str):
         self.__name = name
 
-    def set_no(self, name: int):
-        self.__name = name
+    def set_no(self, no: int):
+        self.__no = no
 
     def set_notes(self, notes: list[float]):
         self.__is_average_calculated = False

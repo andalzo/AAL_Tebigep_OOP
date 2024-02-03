@@ -1,4 +1,4 @@
-def summation(x: int, y: float) -> float:
+def summation(x: float, y: float) -> float:
     return x + y
 
 
